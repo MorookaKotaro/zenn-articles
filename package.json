@@ -6,7 +6,8 @@
   "author": "MorookaKotaro <morookakotaro@team-lab.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "preview": "zenn preview"
+    "preview": "zenn preview",
+    "textlint": "textlint -f checkstyle 'articles/*.md' >> .textlint.log"
   },
   "dependencies": {
     "zenn-cli": "^0.1.99"
