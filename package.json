@@ -1,0 +1,19 @@
+{
+  "name": "zenn-articles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MorookaKotaro/zenn-articles.git",
+  "author": "MorookaKotaro <morookakotaro@team-lab.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "preview": "zenn preview"
+  },
+  "dependencies": {
+    "zenn-cli": "^0.1.99"
+  },
+  "devDependencies": {
+    "textlint": "^12.1.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
+    "textlint-rule-preset-jtf-style": "^2.3.12"
+  }
+}
