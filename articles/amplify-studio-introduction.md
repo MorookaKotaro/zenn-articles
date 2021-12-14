@@ -165,3 +165,5 @@ ReactDOM.render(
 # 参考
 
 @[card](https://aws.amazon.com/jp/blogs/news/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming/)
+
+@[card](https://docs.amplify.aws/console/uibuilder/figmatocode/)
