@@ -100,7 +100,7 @@ $ npx create-react-app studio-demo
 
 :::message
 2021年12月15日時点、create-react-app 5.0.0でインストールされるreact-scripts 5.0.0にてnpm startできない問題を確認。
-create-react-appのバージョンを下げることで対応できることは確認できたが詳しくは調査中。
+create-react-appのバージョンを下げることで対応できることは確認済み。
 :::
 
 Reactアプリが用意できたらAmplify Studio画面右上より**Local setup instructions**を選択。
