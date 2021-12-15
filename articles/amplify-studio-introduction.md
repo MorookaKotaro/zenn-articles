@@ -94,8 +94,8 @@ UI Libraryから好きなコンポーネントを選択 →右上の**Configure*
 
 まずは`create-react-app`にてReactアプリを用意。
 
-```zsh
-npx create-react-app studio-demo
+```shell
+$ npx create-react-app studio-demo
 ```
 
 :::message
@@ -116,8 +116,8 @@ Amplify CLIをまだインストールしていない場合は**View Amplify CLI
 
 必要なライブラリのインストール。
 
-```zsh
-npm install aws-amplify @aws-amplify/ui-react
+```shell
+$ npm install aws-amplify @aws-amplify/ui-react
 ```
 
 以下を`/src/index.js`にインポート。
@@ -158,11 +158,26 @@ ReactDOM.render(
 
 ## 良かった点
 
+- HTML & CSSを記述することなくピクセルパーフェクトなコンポーネントが自動生成されるのでマークアップの作業工数が大幅に削減できそう。
+- Figmaからデザインを取り込む際、変更箇所の差分が表示されるのでデザインの変更を追いやすい。
+
 ## 悪かった点
+
+- Figma上でどういうLayoutを組むとどういうCSSが吐き出されるかを完璧に理解する必要がありそう。だが、情報が少ない。
+  - Component, Primitive, Auto Layoutこの辺がキーワードになってきそう。
+- デザインの変更によりスタイル崩れが発生得るのでデザイナーとフロントエンドエンジニアが共存している世界線では運用が難しそう。
+- コンポーネントをアプリケーションに取り込むたび上書かれてしまうので自動生成されたコンポーネントを直接編集できない。
+  - 公式によると取り込んだコンポーネントをコピペして別コンポーネントとして管理しておけばできるよとのことだがそういうことではない。
 
 # まとめ
 
+- Figmaで完璧なデザインを組むところが大きな課題となりそう。
+- ロジックとの結合が難しいことからアプリケーションの土台として運用するにはまだまだ難しそう。Storybook的なカタログやモックを吐き出す役割としては使えそう。
+- とてもロマンを感じる
+
 # 参考
+
+@[card](https://aws.amazon.com/jp/about-aws/whats-new/2021/12/aws-amplify-studio/)
 
 @[card](https://aws.amazon.com/jp/blogs/news/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming/)
 
