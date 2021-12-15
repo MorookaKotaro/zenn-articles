@@ -3,7 +3,7 @@ title: "AWS Amplify Studio(プレビュー版)を触ってみた 【デザイン
 emoji: "😽"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Amplify", "Figma", "AWS", "React"]
-published: false
+published: true
 ---
 
 # 執筆の経緯
